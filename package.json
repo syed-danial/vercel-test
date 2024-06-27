@@ -1,0 +1,16 @@
+{
+  "name": "my-vercel-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mysql2": "^3.10.1"
+  }
+}
+
