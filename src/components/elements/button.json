@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_elements_buttons",
+  "info": {
+    "displayName": "button",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "solid",
+        "outline",
+        "gradient"
+      ],
+      "default": "solid"
+    },
+    "href": {
+      "type": "text"
+    },
+    "textColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "border": {
+      "type": "enumeration",
+      "enum": [
+        "rectangle",
+        "rounded"
+      ],
+      "default": "rectangle"
+    },
+    "gradient": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.gradient"
+    }
+  }
+}

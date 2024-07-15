@@ -1,0 +1,97 @@
+{
+  "collectionName": "components_elements_cards",
+  "info": {
+    "displayName": "Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "solid",
+        "gradient",
+        "image"
+      ],
+      "required": true
+    },
+    "color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "gradient": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.gradient"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "edges": {
+      "type": "enumeration",
+      "enum": [
+        "round",
+        "flat"
+      ],
+      "required": true,
+      "default": "round"
+    },
+    "mobileType": {
+      "type": "enumeration",
+      "enum": [
+        "solid",
+        "gradient",
+        "image"
+      ]
+    },
+    "mobileColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "mobileGradient": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.gradient"
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mobileEdges": {
+      "type": "enumeration",
+      "enum": [
+        "round",
+        "flat"
+      ]
+    },
+    "href": {
+      "type": "text"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "bottom",
+        "left",
+        "left-bottom",
+        "left-top",
+        "right",
+        "right-bottom",
+        "right-top",
+        "top"
+      ],
+      "default": "center"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_elements_rich_bodies",
+  "info": {
+    "displayName": "RichBody",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "fontSize": {
+      "type": "integer"
+    },
+    "font": {
+      "type": "enumeration",
+      "enum": [
+        "raleway",
+        "lato",
+        "leagueSpartan"
+      ]
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right",
+        "justify"
+      ]
+    }
+  }
+}

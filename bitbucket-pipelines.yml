@@ -1,0 +1,54 @@
+image: node:18-alpine
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Deploy to Production
+          deployment: production
+          script:
+            - apk add --no-cache openssh-client # Install SSH client
+            - echo "Deploying to production environment"
+            - echo -n "$EC2_PROD_KEY" | base64 -d > /tmp/my-decoded-key.pem
+            - chmod 600 /tmp/my-decoded-key.pem
+            - mkdir -p ~/.ssh # Ensure .ssh directory exists
+            - ssh-keyscan 54.198.113.189 >> ~/.ssh/known_hosts
+            - |
+              ssh -i /tmp/my-decoded-key.pem ubuntu@54.198.113.189 << 'EOF'
+                set -e
+                export PATH="/home/ubuntu/.nvm/versions/node/v18.19.0/bin:$PATH"
+                cd bidfta-cms
+                git reset --hard
+                git pull
+                yarn
+                yarn build
+                cd ~
+                pm2 startOrRestart ecosystem.config.js
+              EOF
+            - rm /tmp/my-decoded-key.pem
+    develop:
+      - step:
+          name: Deploy to Staging
+          deployment: staging
+          script:
+            - apk add --no-cache openssh-client # Install SSH client
+            - echo "Deploying to production environment"
+            - echo -n "$EC2_STAGE_KEY" | base64 -d > /tmp/my-decoded-key.pem
+            - chmod 600 /tmp/my-decoded-key.pem
+            - mkdir -p ~/.ssh # Ensure .ssh directory exists
+            - ssh-keyscan 18.209.176.142 >> ~/.ssh/known_hosts
+            - |
+              ssh -i /tmp/my-decoded-key.pem ubuntu@18.209.176.142 << 'EOF'
+                set -e
+                export PATH="/home/ubuntu/.nvm/versions/node/v18.19.0/bin:$PATH"
+                cd bidfta-cms
+                git checkout develop
+                git reset --hard
+                git pull
+                yarn
+                yarn build
+                cd ~
+                pm2 startOrRestart ecosystem.config.js
+              EOF
+            - rm /tmp/my-decoded-key.pem
+

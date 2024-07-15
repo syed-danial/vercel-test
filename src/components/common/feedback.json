@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_feedbacks",
+  "info": {
+    "displayName": "Feedback",
+    "icon": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "review": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

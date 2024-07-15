@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "BIDFTA ONLINE AUCTIONS"
+    },
+    "explanationTitle": {
+      "type": "string",
+      "default": "WHAT IS AN ONLINE AUCTION",
+      "required": true
+    },
+    "socialProofTitle": {
+      "type": "string",
+      "default": "SEE WHAT OUR CUSTOMERS SAY ABOUT BIDFTA",
+      "required": true
+    },
+    "feedback": {
+      "displayName": "Feedback",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.feedback"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "explanationDescription": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "common.hero"
+      ]
+    }
+  }
+}

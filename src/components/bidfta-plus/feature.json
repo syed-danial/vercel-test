@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_bidfta_plus_features",
+  "info": {
+    "displayName": "feature",
+    "icon": "award",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

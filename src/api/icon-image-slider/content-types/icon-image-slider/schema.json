@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "icon_image_sliders",
+  "info": {
+    "singularName": "icon-image-slider",
+    "pluralName": "icon-image-sliders",
+    "displayName": "IconImageSlider",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text"
+    },
+    "imageItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image-item"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.card"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

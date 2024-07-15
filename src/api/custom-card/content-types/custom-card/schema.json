@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "custom_cards",
+  "info": {
+    "singularName": "custom-card",
+    "pluralName": "custom-cards",
+    "displayName": "Custom Card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contentType": {
+      "type": "enumeration",
+      "enum": [
+        "ItemsForYou",
+        "EmailSignup"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.card"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

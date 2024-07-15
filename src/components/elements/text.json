@@ -1,0 +1,94 @@
+{
+  "collectionName": "components_elements_texts",
+  "info": {
+    "displayName": "Short Text",
+    "icon": "text-height",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "fontSize": {
+      "type": "integer",
+      "required": false,
+      "min": 0
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right",
+        "justify"
+      ]
+    },
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "p"
+      ]
+    },
+    "weight": {
+      "type": "enumeration",
+      "enum": [
+        "extrabold",
+        "bold",
+        "semi-bold",
+        "normal"
+      ]
+    },
+    "fullWidth": {
+      "type": "boolean"
+    },
+    "href": {
+      "type": "text"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "font": {
+      "type": "enumeration",
+      "enum": [
+        "raleway",
+        "lato",
+        "leagueSpartan"
+      ],
+      "default": "raleway",
+      "required": true
+    },
+    "label2": {
+      "type": "string"
+    },
+    "color2": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "direction": {
+      "type": "enumeration",
+      "enum": [
+        "inline",
+        "stack"
+      ],
+      "required": false,
+      "default": "inline"
+    },
+    "mobileFontSize": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lists",
+  "info": {
+    "singularName": "list",
+    "pluralName": "lists",
+    "displayName": "List",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text",
+      "required": true
+    },
+    "bulletList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.text",
+      "required": true
+    },
+    "subtitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.button",
+      "required": true
+    },
+    "card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.card",
+      "required": true
+    },
+    "bulletPoint": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.icon",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

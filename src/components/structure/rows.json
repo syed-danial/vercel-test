@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_structure_rows",
+  "info": {
+    "displayName": "Rows"
+  },
+  "options": {},
+  "attributes": {
+    "Columns": {
+      "displayName": "Columns",
+      "type": "component",
+      "repeatable": true,
+      "component": "structure.columns"
+    }
+  }
+}

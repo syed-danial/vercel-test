@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_common_icon_items",
+  "info": {
+    "displayName": "Icon Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.icon",
+      "required": true
+    },
+    "name": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text",
+      "required": false
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text"
+    },
+    "href": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_icons",
+  "info": {
+    "displayName": "Icon",
+    "icon": "seed",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "customField",
+      "required": true,
+      "customField": "plugin::react-icons.icon"
+    },
+    "size": {
+      "default": 48,
+      "required": false,
+      "min": 0,
+      "type": "integer"
+    },
+    "color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

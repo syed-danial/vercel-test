@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_common_image_items",
+  "info": {
+    "displayName": "Image Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text",
+      "required": true
+    },
+    "href": {
+      "type": "text",
+      "required": true
+    },
+    "gradient": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.gradient"
+    }
+  }
+}

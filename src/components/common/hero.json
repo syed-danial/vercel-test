@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_heroes",
+  "info": {
+    "displayName": "Hero"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text"
+    }
+  }
+}

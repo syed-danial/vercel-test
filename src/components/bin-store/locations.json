@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_bin_store_locations",
+  "info": {
+    "displayName": "locations",
+    "icon": "pinMap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nickName": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "hours": {
+      "type": "text"
+    },
+    "mondayPrice": {
+      "type": "decimal",
+      "default": 7,
+      "required": true
+    },
+    "tuesdayPrice": {
+      "type": "decimal",
+      "default": 5,
+      "required": true
+    },
+    "wednesdayPrice": {
+      "type": "decimal",
+      "required": true,
+      "default": 3
+    },
+    "thursdayPrice": {
+      "type": "decimal",
+      "default": 2
+    },
+    "fridayPrice": {
+      "type": "decimal",
+      "default": 1,
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

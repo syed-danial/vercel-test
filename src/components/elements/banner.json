@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_elements_banners",
+  "info": {
+    "displayName": "Banner",
+    "icon": "x-ray",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text"
+    },
+    "subtitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.text"
+    },
+    "backgroundColor": {
+      "type": "string"
+    }
+  }
+}

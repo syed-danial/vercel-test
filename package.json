@@ -1,16 +1,43 @@
 {
-  "name": "my-vercel-project",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "bidfta-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "start": "node index.js"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "mysql2": "^3.10.1"
+    "@strapi/plugin-cloud": "4.24.4",
+    "@strapi/plugin-color-picker": "4.24.4",
+    "@strapi/plugin-documentation": "4.24.4",
+    "@strapi/plugin-i18n": "4.24.4",
+    "@strapi/plugin-users-permissions": "4.24.4",
+    "@strapi/provider-upload-aws-s3": "4.24.4",
+    "@strapi/strapi": "4.24.4",
+    "better-sqlite3": "8.6.0",
+    "knex": "^2.0.0",
+    "mysql": "^2.18.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-plugin-react-icons": "^0.3.1",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "Agustin"
+  },
+  "strapi": {
+    "uuid": "5bb5a797-4208-49af-aa6b-1756a59eeacc"
+  },
+  "engines": {
+    "node": "18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.7.1"
   }
 }
-

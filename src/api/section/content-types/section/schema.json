@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sections",
+  "info": {
+    "singularName": "section",
+    "pluralName": "sections",
+    "displayName": "Section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page": {
+      "type": "enumeration",
+      "enum": [
+        "homepage"
+      ],
+      "required": true
+    },
+    "row": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "default": 1
+    },
+    "column": {
+      "type": "integer",
+      "min": 1,
+      "default": 1,
+      "required": true
+    },
+    "componentType": {
+      "type": "enumeration",
+      "enum": [
+        "Hero",
+        "IconGroup",
+        "IconImageSlider",
+        "Ad",
+        "List",
+        "EmailSignup",
+        "Map",
+        "ItemsForYou"
+      ],
+      "required": true
+    },
+    "span": {
+      "type": "integer",
+      "min": 1,
+      "default": 1,
+      "required": true
+    },
+    "hero": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hero.hero"
+    },
+    "ad": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ad.ad"
+    },
+    "list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::list.list"
+    },
+    "custom_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::custom-card.custom-card"
+    },
+    "icon_group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::icon-group.icon-group"
+    },
+    "icon_image_slider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::icon-image-slider.icon-image-slider"
+    },
+    "hideOnApp": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

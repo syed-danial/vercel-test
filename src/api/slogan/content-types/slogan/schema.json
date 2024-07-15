@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "slogans",
+  "info": {
+    "singularName": "slogan",
+    "pluralName": "slogans",
+    "displayName": "Slogan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "part1": {
+      "type": "string",
+      "required": true,
+      "default": "Turn your wants into wins with"
+    },
+    "part2": {
+      "type": "string",
+      "required": true,
+      "default": "BidFTA Online Auctions"
+    }
+  }
+}

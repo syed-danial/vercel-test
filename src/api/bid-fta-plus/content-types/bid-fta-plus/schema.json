@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "bid_fta_pluses",
+  "info": {
+    "singularName": "bid-fta-plus",
+    "pluralName": "bid-fta-pluses",
+    "displayName": "BidFTA Plus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bidfta-plus.feature"
+    }
+  }
+}

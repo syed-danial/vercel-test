@@ -1,0 +1,58 @@
+{
+  "kind": "singleType",
+  "collectionName": "bin_stores",
+  "info": {
+    "singularName": "bin-store",
+    "pluralName": "bin-stores",
+    "displayName": "Bin Store",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FAQ": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.section"
+    },
+    "bin_product": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.section"
+    },
+    "bin_product_images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "policy": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.section"
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq"
+    },
+    "policies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::policy.policy"
+    },
+    "locations": {
+      "displayName": "locations",
+      "type": "component",
+      "repeatable": true,
+      "component": "bin-store.locations"
+    }
+  }
+}
